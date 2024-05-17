@@ -13,6 +13,7 @@ module.exports = {
     'indent': ['error', 4],
     'brace-style' : ['error', 'allman'],
     'quotes' : ['error', 'single'],
+    'linebreak-style' : ['error', 'windows'],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },

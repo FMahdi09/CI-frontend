@@ -12,7 +12,7 @@ COPY ./ ./
 RUN npm run build
 
 ## serve stage
-FROM nginxinc/nginx-unprivileged:1.24 as serve
+FROM nginx:1.26.0-alpine as serve
 
 COPY --from=builder /app/dist /var/www
 

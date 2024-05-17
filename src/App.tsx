@@ -1,8 +1,9 @@
 import './App.css'
+import Navigationbar from './Components/Navigationbar/Navigationbar';
 
 function App() 
 {
-    return <h1>Hello World</h1>;
+    return <Navigationbar/>
 }
 
 export default App;

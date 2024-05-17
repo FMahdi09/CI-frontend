@@ -1,3 +1,10 @@
+#root
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .primary-background
 {
     background-color: #171e26;

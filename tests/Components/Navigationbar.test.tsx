@@ -8,10 +8,10 @@ describe('Navigationbar', () =>
         render(<Navigationbar/>);
 
         return {
-            exploreButton:  screen.getByRole('button', {name:/explore/i}),
-            helpButton:     screen.getByRole('button', {name:/help/i}),
-            loginButton:    screen.getByRole('button', {name:/login/i}),
-            registerButton: screen.getByRole('button', {name:/register/i}),
+            exploreLink:  screen.getByRole('link', {name:/explore/i}),
+            helpLink:     screen.getByRole('link', {name:/help/i}),
+            loginLink:    screen.getByRole('link', {name:/login/i}),
+            registerLink: screen.getByRole('link', {name:/register/i}),
         };
     };
 

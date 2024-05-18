@@ -3,16 +3,24 @@ import './Navigationbar.css';
 function Navigationbar()
 {
     return (
-        <div className='navigationbar secondary-background d-flex flex-row'>
-            <div className='d-flex flex-row flex-fill'>
-                <button className='secondary-button navigationbar-button'>Explore</button>
-                <button className='secondary-button navigationbar-button'>Help</button>
-            </div>
-            <div className='d-flex flex-row'>
-                <button className='secondary-button navigationbar-button'>Register</button>
-                <button className='secondary-button navigationbar-button'>Login</button>
-            </div>
-        </div>
+        <nav className='navigationbar secondary-background'>
+            <ul>
+                <li>
+                    <a className='secondary-button' href='/explore'>Explore</a>
+                </li>
+                <li>
+                    <a className='secondary-button' href='/help'>Help</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a className='secondary-button' href='/login'>Login</a>
+                </li>
+                <li>
+                    <a className='secondary-button' href='/register'>Register</a>
+                </li>
+            </ul>
+        </nav>
     );
 }
 

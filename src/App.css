@@ -10,6 +10,11 @@
     color: #d2e0f0;
 }
 
+.main
+{
+    flex-grow: 1;
+}
+
 .primary-background
 {
     background-color: #171e26;

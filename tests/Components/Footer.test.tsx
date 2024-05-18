@@ -3,11 +3,18 @@ import Footer from '../../src/Components/Footer/Footer';
 
 describe('Footer', () => 
 {
-    it('should render hardcoded Footer', () => 
+    const renderComponent = () =>
     {
         render(<Footer/>);
 
-        const footer = screen.getByRole('paragraph');
-        expect(footer).toBeInTheDocument();  
+        return {
+            githubLink: screen.getByRole('link', {name:/github/i}),
+            licenseLink: screen.getByRole('link', {name:/license/i}),
+        };
+    };
+
+    it('should render all elements without failure', () => 
+    {
+        renderComponent();
     });
 });

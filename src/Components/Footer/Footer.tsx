@@ -3,8 +3,26 @@ import './Footer.css';
 function Footer()
 {
     return (
-        <div className='footer secondary-background'>
-            <p>Footer</p>
+        <div className='footer secondary-background d-flex flex-row'>
+            <div className='d-flex flex-row flex-fill'>
+            </div>
+            <div className='d-flex flex-row align-items-center'>
+                <a 
+                    className='link footer-link' 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href='https://github.com/FMahdi09/CI-frontend'>
+                        Github
+                </a>
+                <div>|</div>
+                <a 
+                    className='link footer-link'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href='https://github.com/FMahdi09/CI-frontend'>
+                        License
+                </a>
+            </div>
         </div>
     );
 }

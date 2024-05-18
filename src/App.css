@@ -1,8 +1,12 @@
 #root
 {
     min-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
     display: flex;
     flex-direction: column;
+
     color: #d2e0f0;
 }
 
@@ -14,4 +18,15 @@
 .secondary-background
 {
     background-color: #10161d;
+}
+
+.secondary-button
+{
+    background-color: transparent;
+    color: #d2e0d6;
+}
+
+.secondary-button:hover
+{
+    background-color: #374351;
 }

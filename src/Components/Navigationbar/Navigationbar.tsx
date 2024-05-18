@@ -1,24 +1,17 @@
 import './Navigationbar.css';
+import NavigationLink from './NavigationLink/NavigationLink';
 
 function Navigationbar()
 {
     return (
         <nav className='navigationbar secondary-background'>
             <ul>
-                <li>
-                    <a className='secondary-button' href='/explore'>Explore</a>
-                </li>
-                <li>
-                    <a className='secondary-button' href='/help'>Help</a>
-                </li>
+                <NavigationLink to='/explore'>Explore</NavigationLink>
+                <NavigationLink to='/help'>Help</NavigationLink>
             </ul>
             <ul>
-                <li>
-                    <a className='secondary-button' href='/login'>Login</a>
-                </li>
-                <li>
-                    <a className='secondary-button' href='/register'>Register</a>
-                </li>
+                <NavigationLink to='/login'>Login</NavigationLink>
+                <NavigationLink to='/register'>Register</NavigationLink>
             </ul>
         </nav>
     );

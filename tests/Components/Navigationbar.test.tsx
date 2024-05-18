@@ -1,11 +1,16 @@
 import { render, screen } from '@testing-library/react';
 import Navigationbar from '../../src/Components/Navigationbar/Navigationbar';
+import { MemoryRouter } from 'react-router-dom';
 
 describe('Navigationbar', () => 
 {
     const renderComponent = () =>
     {
-        render(<Navigationbar/>);
+        render(
+            <MemoryRouter>
+                <Navigationbar/>
+            </MemoryRouter>
+        );
 
         return {
             exploreLink:  screen.getByRole('link', {name:/explore/i}),

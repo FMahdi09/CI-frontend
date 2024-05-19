@@ -4,6 +4,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    border-style: solid;
+    border-color: #242d38;
+    border-width: 0px 0px 1px 0px;
 }
 
 .navigationbar ul

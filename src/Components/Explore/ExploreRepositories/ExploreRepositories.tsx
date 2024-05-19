@@ -4,7 +4,7 @@ import './ExploreRepositories.css';
 
 function ExploreRepositories()
 {
-    const [query, setQuery] = useState('');
+    const [, setQuery] = useState('');
 
     return (
         <Searchbar className='searchbar' placeholder='Search repos...' searchCallback={setQuery}>

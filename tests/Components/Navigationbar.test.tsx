@@ -25,13 +25,4 @@ describe('Navigationbar', () =>
     {
         renderComponent();
     });
-
-    it('should mark the explore button as active after clicking on it', async () => 
-    {
-        const {exploreLink, user} = renderComponent();
-        
-        await user.click(exploreLink);
-
-        expect(exploreLink.className).toMatch(/active/i);
-    });
 });

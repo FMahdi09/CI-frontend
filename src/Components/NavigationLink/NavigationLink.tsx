@@ -4,17 +4,18 @@ interface props
 {
     to: string,
     children: string,
-    className?: string
+    className?: string,
+    activeClass?: string
 }
 
-function NavigationLink({to, children} : props)
+function NavigationLink({to, className, activeClass, children} : props)
 {
     const resolvedPath = useResolvedPath(to);
     const isActive = useMatch({ path: resolvedPath.pathname, end: true});
 
     return (
         <li>
-            <Link to={to} className={'secondary-button ' + (isActive ? 'secondary-button-active' : '')}>
+            <Link to={to} className={(className || '') + ' ' + (isActive ? (activeClass || '') : '')}>
                 {children}
             </Link>
         </li>

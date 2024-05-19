@@ -1,17 +1,25 @@
 import './Navigationbar.css';
-import NavigationLink from './NavigationLink/NavigationLink';
+import NavigationLink from '../NavigationLink/NavigationLink';
 
 function Navigationbar()
 {
     return (
         <nav className='navigationbar secondary-background'>
             <ul>
-                <NavigationLink to='/explore'>Explore</NavigationLink>
-                <NavigationLink to='/help'>Help</NavigationLink>
+                <NavigationLink className='secondary-button' activeClass='secondary-button-active' to='/explore'>
+                    Explore
+                </NavigationLink>
+                <NavigationLink className='secondary-button' activeClass='secondary-button-active' to='/help'>
+                    Help
+                </NavigationLink>
             </ul>
             <ul>
-                <NavigationLink to='/login'>Login</NavigationLink>
-                <NavigationLink to='/register'>Register</NavigationLink>
+                <NavigationLink className='secondary-button' activeClass='secondary-button-active' to='/login'>
+                    Login
+                </NavigationLink>
+                <NavigationLink className='secondary-button' activeClass='secondary-button-active' to='/register'>
+                    Register
+                </NavigationLink>
             </ul>
         </nav>
     );

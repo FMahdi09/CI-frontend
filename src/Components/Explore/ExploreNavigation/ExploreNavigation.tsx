@@ -6,9 +6,9 @@ function ExploreNavigation()
     return (
         <nav className='explore-nav'>
             <ul>
-                <NavigationLink to='repos' activeClass='explore-nav-active'>Repositories</NavigationLink>
-                <NavigationLink to='users' activeClass='explore-nav-active'>Users</NavigationLink>
-                <NavigationLink to='organisations' activeClass='explore-nav-active'>Organisations</NavigationLink>
+                <NavigationLink to='/explore/repos' activeClass='explore-nav-active'>Repositories</NavigationLink>
+                <NavigationLink to='/explore/users' activeClass='explore-nav-active'>Users</NavigationLink>
+                <NavigationLink to='/explore/organisations' activeClass='explore-nav-active'>Organisations</NavigationLink>
             </ul>
         </nav>
     );

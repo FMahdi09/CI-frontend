@@ -1,17 +1,17 @@
-import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import { Link, useMatch } from 'react-router-dom';
 
 interface props
 {
     to: string,
     children: string,
+    activeMatch?: string
+    activeClass: string
     className?: string,
-    activeClass?: string
 }
 
-function NavigationLink({to, className, activeClass, children} : props)
+function NavigationLink({to, className, activeMatch, activeClass, children} : props)
 {
-    const resolvedPath = useResolvedPath(to);
-    const isActive = useMatch({path: resolvedPath.pathname + '/*'});
+    const isActive = useMatch({path: activeMatch ? activeMatch : to + '/*'});
 
     return (
         <li>

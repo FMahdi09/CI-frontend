@@ -6,7 +6,7 @@ function Navigationbar()
     return (
         <nav className='navigationbar secondary-background'>
             <ul>
-                <NavigationLink activeClass='navigationbar-active' to='/explore/repos'>
+                <NavigationLink activeClass='navigationbar-active' activeMatch='/explore/*' to='/explore/repos'>
                     Explore
                 </NavigationLink>
                 <NavigationLink activeClass='navigationbar-active' to='/help'>

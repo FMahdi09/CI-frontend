@@ -6,7 +6,7 @@
     justify-content: space-between;
 
     border-style: solid;
-    border-color: #242d38;
+    border-color: var(--primary-border-color);
     border-width: 0px 0px 1px 0px;
 }
 
@@ -41,4 +41,15 @@
     font-size: 0.9rem;
     text-decoration: none;
     text-align: center;
+    color: var(--primary-text-color);
+}
+
+.navigationbar a:hover
+{
+    background-color: var(--secondary-hover);
+}
+
+.active
+{
+    background-color: var(--secondary-hover);
 }

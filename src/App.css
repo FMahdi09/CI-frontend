@@ -7,7 +7,14 @@
     display: flex;
     flex-direction: column;
 
-    color: #d2e0f0;
+    --primary-background: #171e26;
+    --primary-text-color: #d2e0f0;
+    --primary-border-color: #242d38;   
+
+    --secondary-background: #10161d;
+    --secondary-hover: #374251;
+
+    --link-color: #fb923c;
 }
 
 .main
@@ -17,33 +24,17 @@
 
 .primary-background
 {
-    background-color: #171e26;
+    background-color: var(--primary-background);
 }
 
 .secondary-background
 {
-    background-color: #10161d;
-}
-
-.secondary-button
-{
-    background-color: transparent;
-    color: #d2e0d6;
-}
-
-.secondary-button-active
-{
-    background-color: #374351;
-}
-
-.secondary-button:hover
-{
-    background-color: #374351;
+    background-color: var(--secondary-background);
 }
 
 .link
 {
-    color: #fb923c;
+    color: var(--link-color);
     text-decoration: none;
 }
 

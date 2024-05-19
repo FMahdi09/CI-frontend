@@ -1,6 +1,10 @@
+import ExploreNavigation from './ExploreNavigation/ExploreNavigation';
+
 function Explore()
 {
-    return <h1>Explore</h1>;
+    return (
+        <ExploreNavigation />
+    );
 }
 
 export default Explore;

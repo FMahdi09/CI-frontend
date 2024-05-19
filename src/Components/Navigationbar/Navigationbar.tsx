@@ -6,18 +6,18 @@ function Navigationbar()
     return (
         <nav className='navigationbar secondary-background'>
             <ul>
-                <NavigationLink activeClass='active' to='/explore'>
+                <NavigationLink activeClass='navigationbar-active' to='/explore'>
                     Explore
                 </NavigationLink>
-                <NavigationLink activeClass='active' to='/help'>
+                <NavigationLink activeClass='navigationbar-active' to='/help'>
                     Help
                 </NavigationLink>
             </ul>
             <ul>
-                <NavigationLink activeClass='active' to='/login'>
+                <NavigationLink activeClass='navigationbar-active' to='/login'>
                     Login
                 </NavigationLink>
-                <NavigationLink activeClass='active' to='/register'>
+                <NavigationLink activeClass='navigationbar-active' to='/register'>
                     Register
                 </NavigationLink>
             </ul>

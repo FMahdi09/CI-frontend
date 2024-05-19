@@ -8,10 +8,12 @@
     flex-direction: column;
 
     --primary-background: #171e26;
+    --primary-selected: #ffffff;
     --primary-text-color: #d2e0f0;
     --primary-border-color: #242d38;   
 
     --secondary-background: #10161d;
+    --secondary-text-color: #aebed0;
     --secondary-hover: #374251;
 
     --link-color: #fb923c;

@@ -15,7 +15,7 @@ function App()
             <div className='main primary-background'>
                 <Routes>
                     <Route path='/' element={<Explore/>}/>
-                    <Route path='/explore' element={<Explore/>}/>
+                    <Route path='/explore/*' element={<Explore/>}/>
                     <Route path='/help' element={<Help/>}/>
                     <Route path='/register' element={<Register/>}/>
                     <Route path='/login' element={<Login/>}/>

@@ -11,7 +11,7 @@ interface props
 function NavigationLink({to, className, activeClass, children} : props)
 {
     const resolvedPath = useResolvedPath(to);
-    const isActive = useMatch({ path: resolvedPath.pathname, end: true});
+    const isActive = useMatch({path: resolvedPath.pathname + '/*'});
 
     return (
         <li>

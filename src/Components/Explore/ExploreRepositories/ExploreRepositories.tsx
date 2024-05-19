@@ -1,6 +1,15 @@
+import { useState } from 'react';
+import Searchbar from '../../Searchbar/Searchbar';
+
 function ExploreRepositories()
 {
-    return <h1>Repositories</h1>;
+    const [query, setQuery] = useState('');
+
+    return (
+        <Searchbar placeholder='Search repos...' searchCallback={setQuery}>
+            Search
+        </Searchbar>
+    );
 }
 
 export default ExploreRepositories;

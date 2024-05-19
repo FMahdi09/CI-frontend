@@ -1,13 +1,13 @@
 import { render } from '@testing-library/react';
-import Navigationbar from '../../src/Components/Navigationbar/Navigationbar';
 import { MemoryRouter } from 'react-router-dom';
+import Explore from '../../../src/Components/Explore/Explore';
 
-describe('Navigationbar', () => 
+describe('Explore', () => 
 {
-    const renderComponent = () =>
+    const renderComponent = () => 
     {
         render(
-            <Navigationbar/>,
+            <Explore />,
             {wrapper: MemoryRouter}
         );
     };

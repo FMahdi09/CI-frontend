@@ -60,12 +60,17 @@ body
 
 .error-border
 {
-    border-color: var(--error-border-color);
+    border-color: var(--error-border-color) !important;
+}
+
+.error-text
+{
+    color: var(--error-border-color) !important;
 }
 
 .error-background
 {
-    background-color: var(--error-color);
+    background-color: var(--error-color) !important;
 }
 
 .link

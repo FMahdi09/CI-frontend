@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import './Form.css';
 import Footer from './Components/Footer/Footer';
 import Navigationbar from './Components/Navigationbar/Navigationbar';
 import Register from './Components/Register/Register';

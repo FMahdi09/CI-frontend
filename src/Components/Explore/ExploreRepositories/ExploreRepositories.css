@@ -1,4 +1,28 @@
-.searchbar
+.repo-content
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.repo-searchbar
+{
+    width: 100%;
     margin: 20px;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .repo-searchbar
+    {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .repo-searchbar
+    {
+        max-width: 60%;
+    }
 }

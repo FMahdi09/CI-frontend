@@ -7,9 +7,11 @@ function ExploreRepositories()
     const [, setQuery] = useState('');
 
     return (
-        <Searchbar className='searchbar' placeholder='Search repos...' searchCallback={setQuery}>
+        <div className='repo-content'>
+            <Searchbar className='repo-searchbar' placeholder='Search repos...' searchCallback={setQuery}>
             Search
-        </Searchbar>
+            </Searchbar>
+        </div>
     );
 }
 

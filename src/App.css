@@ -33,6 +33,9 @@ body
     --link-color: #fb923c;
     --link-hover: #f97316;
     --link-click: #ea580c;
+
+    --error-color: #5f2525;
+    --error-border-color: #783030;
 }
 
 .main
@@ -48,6 +51,21 @@ body
 .secondary-background
 {
     background-color: var(--secondary-background);
+}
+
+.hidden
+{
+    display: none;
+}
+
+.error-border
+{
+    border-color: var(--error-border-color);
+}
+
+.error-background
+{
+    background-color: var(--error-color);
 }
 
 .link
@@ -68,8 +86,8 @@ body
     text-align: center;
     color: var(--primary-text-color);
 
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

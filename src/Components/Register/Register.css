@@ -28,3 +28,19 @@
 
     font-size: 0.9rem;
 }
+
+.error
+{
+    background-color: var(--error-color);
+
+    color: var(--primary-text-color);
+    font-size: 0.9rem;
+    text-align: center;
+
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--error-border-color);
+    border-style: solid;
+
+    padding: 18px;
+}

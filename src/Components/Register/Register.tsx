@@ -11,6 +11,11 @@ function Register()
                 </div>
                 <form className='form'>
                     <div className='form-element'>
+                        <div className='error hidden'>
+                            Error
+                        </div>
+                    </div>
+                    <div className='form-element'>
                         <label htmlFor='username' className='form-label'>
                             Username *
                         </label>

@@ -1,0 +1,28 @@
+.orgs-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.orgs-searchbar
+{
+    width: 100%;
+    margin: 20px;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .orgs-searchbar
+    {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .orgs-searchbar
+    {
+        max-width: 60%;
+    }
+}

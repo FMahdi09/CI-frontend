@@ -1,0 +1,28 @@
+.users-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.users-searchbar
+{
+    width: 100%;
+    margin: 20px;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .users-searchbar
+    {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .users-searchbar
+    {
+        max-width: 60%;
+    }
+}

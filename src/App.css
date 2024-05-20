@@ -17,10 +17,14 @@
     --secondary-border-color: #445161;
     --secondary-hover: #374251;
 
+    --form-background: #1d262f;
+
     --searchbar-background: #2b3642;
     --searchbar-hover: #5f6e80;
 
     --link-color: #fb923c;
+    --link-hover: #f97316;
+    --link-click: #ea580c;
 }
 
 .main
@@ -47,4 +51,122 @@
 .link:hover
 {
     text-decoration: underline;
+}
+
+.form-header
+{
+    background-color: var(--primary-border-color);
+
+    text-align: center;
+    color: var(--primary-text-color);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--form-background);
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.form-element
+{
+    margin-top: 15px;
+    width: 95%;
+    max-width: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+@media only screen and (min-width: 992px)
+{
+    .form-element
+    {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .form-element
+    {
+        width: 60%;
+    }
+}
+
+.form-label
+{
+    color: var(--primary-text-color);
+    font-size: 0.9rem;
+}
+
+.form-input
+{
+    background-color: var(--searchbar-background);
+
+    flex: 1;
+
+    font-size: 0.8rem;
+    color: var(--primary-text-color);
+
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-color: var(--secondary-border-color);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.form-input:hover
+{
+    border-color: var(--searchbar-hover);
+}
+
+.form-input:focus
+{
+    outline: none;
+    border-color: var(--link-color);
+}
+
+.form-button
+{
+    background-color: var(--link-color);
+
+    align-self: flex-start;
+
+    margin-top: 10px;
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    border-width: 0px;
+    border-radius: 5px;
+
+    font-size: 0.9rem;
+}
+
+.form-button:hover
+{
+    background-color: var(--link-hover);
+}
+
+.form-button:focus
+{
+    outline: none;
+    background-color: var(--link-click);
 }

@@ -48,3 +48,8 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+.searchbar-button:focus
+{
+    outline: none;
+}

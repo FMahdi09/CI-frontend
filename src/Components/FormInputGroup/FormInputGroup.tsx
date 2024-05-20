@@ -13,7 +13,7 @@ function FormInputGroup({description, hasError, inputRef, type, onChange}: props
 {
     return (
         <div className='form-element'>
-            <label htmlFor={description} className={'form-label ' + (hasError ? 'error-text' : '')}>
+            <label htmlFor={description} role='caption' className={'form-label ' + (hasError ? 'error-text' : '')}>
                 {description}
             </label>
             <input 

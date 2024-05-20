@@ -1,6 +1,21 @@
 .footer
 {
     height: 2.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    color: var(--secondary-text-color);
+}
+
+.footer-left
+{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .footer-link

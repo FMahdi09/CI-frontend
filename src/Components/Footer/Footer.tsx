@@ -3,10 +3,8 @@ import './Footer.css';
 function Footer()
 {
     return (
-        <div className='footer secondary-background d-flex flex-row'>
-            <div className='d-flex flex-row flex-fill'>
-            </div>
-            <div className='d-flex flex-row align-items-center'>
+        <div className='footer secondary-background'>
+            <div className='footer-left'>
                 <a 
                     className='link footer-link' 
                     target="_blank" 

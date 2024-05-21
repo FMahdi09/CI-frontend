@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import FormInputGroup from '../FormInputGroup/FormInputGroup';
 import './Login.css';
-import { FormEvent, useRef, useState } from 'react';
+import { FormEvent, useEffect, useRef, useState } from 'react';
 
 function Login()
 {
@@ -32,6 +32,11 @@ function Login()
             setErrorMessage('');
         }
     };
+
+    useEffect(() => 
+    {
+        usernameRef.current?.focus();
+    }, []);
 
     return (
         <div className='login-content'>

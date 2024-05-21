@@ -1,0 +1,46 @@
+.login-content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.login-form
+{
+    width: 80%;
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .login-form
+    {
+        max-width: 60%;
+    }
+}
+
+.register-link
+{
+    margin-bottom: 10px;
+    
+    align-self: flex-start;
+
+    font-size: 0.9rem;
+}
+
+.error
+{
+    background-color: var(--error-color);
+
+    color: var(--primary-text-color);
+    font-size: 0.9rem;
+    text-align: center;
+
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: var(--error-border-color);
+    border-style: solid;
+
+    padding: 18px;
+}

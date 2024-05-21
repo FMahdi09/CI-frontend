@@ -84,24 +84,27 @@ function Register()
                 </div>
                 <form className='form' onSubmit={handleSubmit}>
                     <div className='form-element'>
-                        <div className={(errorMessage ? 'error' : 'hidden')}>
+                        <p aria-label='error' className={(errorMessage ? 'error' : 'hidden')}>
                             {errorMessage}
-                        </div>
+                        </p>
                     </div>
                     <FormInputGroup 
                         description='Username *'
+                        ariaLabel='username'
                         hasError={usernameErr}
                         inputRef={usernameRef} 
                         onChange={SetUsername}
                     />
                     <FormInputGroup
                         description='Email address *'
+                        ariaLabel='email'
                         hasError={emailErr}
                         inputRef={emailRef}
                         onChange={SetEmail}
                     />
                     <FormInputGroup
                         description='Password *'
+                        ariaLabel='password'
                         hasError={passwordErr}
                         inputRef={passwordRef}
                         type='password'
@@ -109,17 +112,18 @@ function Register()
                     />
                     <FormInputGroup
                         description='Confirm password *'
+                        ariaLabel='confirm password'
                         hasError={passwordErr}
                         type='password'
                         onChange={SetConfirmPassword}
                     />
                     <div className='form-element'>
-                        <button className='form-button'>
+                        <button aria-label='submit' className='form-button'>
                             Register Account
                         </button>
                     </div>
                     <div className='form-element'>
-                        <NavLink className='link login-link' to='/login'>
+                        <NavLink aria-label='login' className='link login-link' to='/login'>
                             Already have an account? Sign in now!
                         </NavLink>
                     </div>

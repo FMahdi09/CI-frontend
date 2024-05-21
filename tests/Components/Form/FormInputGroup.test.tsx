@@ -6,6 +6,7 @@ describe('FromInputGroup', () =>
 {
     const renderComponent = (
         description: string,
+        label: string,
         hasError: boolean,
         onChange: (value: string) => void
     ) =>
@@ -13,13 +14,14 @@ describe('FromInputGroup', () =>
         render(
             <FormInputGroup 
                 description={description} 
+                ariaLabel={label}
                 hasError={hasError}
                 onChange={onChange}
             />
         );
 
         return ({
-            input: screen.getByRole('textbox', {name:description}),
+            input: screen.getByRole('textbox', {name:label}),
             user: userEvent.setup()
         });
     };
@@ -30,7 +32,7 @@ describe('FromInputGroup', () =>
         {
         };
 
-        const {input} = renderComponent('testing', true, onChange);
+        const {input} = renderComponent('desc', 'label', true, onChange);
 
         expect(input.className).contain('error');
     });
@@ -41,7 +43,7 @@ describe('FromInputGroup', () =>
         {
         };
 
-        const {input} = renderComponent('testing', false, onChange);
+        const {input} = renderComponent('desc', 'label', false, onChange);
 
         expect(input.className).not.contain('error');
 
@@ -57,7 +59,7 @@ describe('FromInputGroup', () =>
             callBackValue = s;
         };
 
-        const {input, user} = renderComponent('testing', false, onChange);
+        const {input, user} = renderComponent('desc', 'label', false, onChange);
 
         await user.type(input, inputValue);
 

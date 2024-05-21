@@ -3,22 +3,24 @@ import { RefObject } from 'react';
 interface props
 {
     description: string,
+    ariaLabel: string,
     hasError: boolean,
     inputRef?: RefObject<HTMLInputElement>,
     type?: string,
     onChange(value: string) : void
 }
 
-function FormInputGroup({description, hasError, inputRef, type, onChange}: props)
+function FormInputGroup({description, ariaLabel, hasError, inputRef, type, onChange}: props)
 {
     return (
         <div className='form-element'>
-            <label htmlFor={description} role='caption' className={'form-label ' + (hasError ? 'error-text' : '')}>
+            <label htmlFor={ariaLabel} className={'form-label ' + (hasError ? 'error-text' : '')}>
                 {description}
             </label>
             <input 
                 type={type || 'string'}
-                id={description}
+                id={ariaLabel}
+                aria-label={ariaLabel}
                 className={'form-input ' + (hasError ? 'error-border error-background' : '')}
                 onChange={(e) => 
                 {

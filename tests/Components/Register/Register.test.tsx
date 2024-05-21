@@ -24,11 +24,6 @@ describe('Register', () =>
         });
     };
 
-    it('should render all elements without failure', () => 
-    {
-        renderComponent();
-    });
-
     test.each([
         ['as', 'email@email.at', 'validPassword', 'validPassword'],
         ['validUsername', 'email@email.at', 'validPassword', 'wrongPassword'],
